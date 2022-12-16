@@ -1,0 +1,11 @@
+{
+	"name": "supernatural-cast",
+	"version": "1.0.0",
+	"description": "",
+	"main": "tailwind.config.js",
+	"scripts": {
+		"watch": "./tailwindcss -i ./app/app.css -o ./dist/app.css --watch"
+	},
+	"author": "",
+	"license": "ISC"
+}
