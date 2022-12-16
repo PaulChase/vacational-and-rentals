@@ -7,15 +7,32 @@
 		<title>Creative and Affordable Experiences for your family</title>
 
 		<link rel="stylesheet" href="/dist/app.css" />
+
+		<style>
+			.main-container {
+				position: relative;
+				width: 100%;
+				height: 100vh;
+				scroll-behavior: smooth;
+				overflow: auto;
+				scroll-snap-type: y mandatory;
+			}
+
+			.section {
+				scroll-snap-align: start;
+			}
+		</style>
 	</head>
 
 	<body>
-		<main>
-			<header class="min-h-[95vh] grid grid-cols-2 bg-lime-300 relative">
+		<main class="main-container">
+			<!-- hero section -->
+			<header class="h-screen grid grid-cols-2 relative section">
 				<nav class="bg-indigo-700/60 absolute left-0 top-0 w-full z-20">
 					<div class="flex items-center justify-between max-w-7xl mx-auto py-4">
 						<a href="#"
 							><h2 class="text-3xl font-extrabold text-white inline-flex items-center">
+								<!-- The logo -->
 								<span class="bg-indigo-500 w-14 h-14 flex items-center justify-center mr-3 rounded-xl shadow-lg"
 									><svg
 										xmlns="http://www.w3.org/2000/svg"
@@ -36,6 +53,7 @@
 							</h2></a
 						>
 
+						<!-- nav items -->
 						<ul class="flex items-center space-x-6">
 							<li><a href="#" class="uppercase text-white font-semibold">Home</a></li>
 							<li><a href="#" class="uppercase text-white font-semibold">New Estate</a></li>
@@ -66,7 +84,7 @@
 					<div class="space-y-6">
 						<h2 class="uppercase text-lg font-semibold opacity-60">bingle home colony</h2>
 
-						<h1 class="text-4xl font-bold">Now It's Easy to Find <span class="text-indigo-400">Your Home</span></h1>
+						<h1 class="text-4xl font-extrabold">Now It's Easy to Find <span class="text-blue-400">Your Home</span></h1>
 
 						<p class="text-lg font-medium opacity-90">
 							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim eveniet nulla, corrupti aliquam voluptas ut
@@ -75,7 +93,7 @@
 
 						<a
 							href="#"
-							class="bg-indigo-600 px-8 py-3 rounded-md inline-flex font-semibold hover:-translate-y-2 transition-all hover:bg-white hover:text-indigo-700"
+							class="bg-blue-600 px-8 py-3 rounded-md inline-flex font-semibold hover:-translate-y-2 transition-all hover:bg-white hover:text-indigo-700 ease-linear"
 							>Get Started
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -96,6 +114,102 @@
 					<img src="/img/hero.jpg" alt="" class="object-cover h-full" />
 				</div>
 			</header>
+			<!-- end Hero Section -->
+
+			<!-- 2nd section -->
+			<section class="h-screen grid grid-cols-5 bg-blue-100 section">
+				<div class="flex items-center justify-center px-20 col-span-2">
+					<div class="space-y-4">
+						<h2 class="uppercase text-lg font-semibold opacity-60">Collection in 2022</h2>
+
+						<h1 class="text-4xl font-bold leading-10">
+							Rich Home <br />
+							<span class="text-blue-400">Your First Choice</span> <br />
+							From $198k
+						</h1>
+
+						<p class="text-lg font-medium opacity-90">
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim eveniet nulla, corrupti aliquam voluptas.
+						</p>
+
+						<a
+							href="#"
+							class="bg-blue-600 px-8 py-4 rounded-md inline-flex font-semibold hover:-translate-y-2 transition-all ease-linear text-white"
+							>Get Shopping
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="w-6 h-6 ml-3"
+							>
+								<path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+							</svg>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-span-3 flex items-center w-full relative">
+					<img
+						src="/img/stack1.jpg"
+						alt=""
+						class="w-80 h-96 object-cover border-8 border-gray-50 rounded-md z-50 shadow-lg"
+					/>
+					<img
+						src="/img/stack2.jpg"
+						alt=""
+						class="w-96 h-[30rem] object-cover border-8 border-gray-50 rounded-md z-30 -ml-40 shadow-lg"
+					/>
+					<img
+						src="/img/stack3.jpg"
+						alt=""
+						class="w-96 h-[36rem] object-cover border-8 border-gray-50 rounded-md -ml-36 shadow-xl"
+					/>
+				</div>
+			</section>
+
+			<!-- 3rd section -->
+			<section class="h-screen section flex items-center justify-center relative">
+				<img src="/img/about-side1.jpg" alt="" class="w-[26rem] h-[24rem] object-cover rounded-md -mr-6 shadow-xl" />
+				<div class="bg-indigo-900 space-y-6 text-white w-[28rem] px-6 py-8 rounded z-30 relative shadow-2xl">
+					<h3 class="font-bold text-3xl">About <span class="text-blue-400">Us</span></h3>
+
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem incidunt, repellat totam obcaecati aut
+						praesentium porro magnam iure enim velit? Nam ut in tempore! Quaerat iure enim culpa similique officiis
+						doloribus incidunt cum! Expedita error nam aliquam dolores numquam velit odit totam, autem reprehenderit,
+						laboriosam harum reiciendis quo alias eius ipsum accusantium sed mollitia.
+					</p>
+
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem incidunt, repellat totam obcaecati aut
+						praesentium porro magnam iure enim velit? Nam ut in tempore! Quaerat iure enim culpa similique officiis
+						doloribus incidunt cum! Expedita error nam aliquam dolores numquam.
+					</p>
+
+					<a
+						href="#"
+						class="bg-blue-600 px-8 py-3 rounded-md inline-flex font-semibold hover:-translate-y-2 transition-all hover:bg-white hover:text-indigo-700 ease-linear"
+						>Read More
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="w-6 h-6 ml-3"
+						>
+							<path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+						</svg>
+					</a>
+				</div>
+				<img src="/img/about-side2.jpg" alt="" class="w-[26rem] h-[24rem] object-cover rounded-md -ml-6 shadow-xl" />
+			</section>
+			<!-- 3rd section -->
+			<section class="bg-green-700 h-screen text-white section">
+				<p>3rd section</p>
+			</section>
 		</main>
 	</body>
 </html>
