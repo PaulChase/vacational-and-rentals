@@ -32,6 +32,7 @@
 		<main class="main-container">
 			<!-- hero section -->
 			<header class="h-screen grid grid-cols-2 relative section">
+				<!-- the Navbar -->
 				<nav class="bg-indigo-700/60 absolute left-0 top-0 w-full z-20">
 					<div class="flex items-center justify-between max-w-7xl mx-auto py-4">
 						<a href="#"
@@ -84,6 +85,7 @@
 						</ul>
 					</div>
 				</nav>
+
 				<div class="bg-indigo-900 text-white flex items-center justify-center px-20">
 					<div class="space-y-6">
 						<h2 class="uppercase text-lg font-semibold opacity-60">bingle home colony</h2>
@@ -113,9 +115,13 @@
 					</div>
 				</div>
 
-				<div class="relative">
+				<div class="relative group overflow-hidden cursor-pointer">
 					<div class="bg-indigo-800/40 absolute left-0 top-0 w-full h-full z-10"></div>
-					<img src="/img/hero.jpg" alt="" class="object-cover h-full" />
+					<img
+						src="/img/hero.jpg"
+						alt=""
+						class="object-cover h-full group-hover:scale-125 transition-all ease-linear"
+					/>
 				</div>
 			</header>
 			<!-- end Hero Section -->
@@ -158,17 +164,17 @@
 					<img
 						src="/img/stack1.jpg"
 						alt=""
-						class="w-80 h-96 object-cover border-8 border-gray-50 rounded-md z-50 shadow-lg"
+						class="w-80 h-96 object-cover border-8 border-gray-50 rounded-md z-40 shadow-lg hover:z-50 transition-all ease-linear cursor-pointer hover:-translate-y-2 hover:border-blue-500"
 					/>
 					<img
 						src="/img/stack2.jpg"
 						alt=""
-						class="w-96 h-[30rem] object-cover border-8 border-gray-50 rounded-md z-30 -ml-40 shadow-lg"
+						class="w-96 h-[30rem] object-cover border-8 border-gray-50 rounded-md z-30 -ml-40 shadow-lg hover:z-50 transition-all ease-linear cursor-pointer hover:-translate-y-2 hover:border-blue-500"
 					/>
 					<img
 						src="/img/stack3.jpg"
 						alt=""
-						class="w-96 h-[36rem] object-cover border-8 border-gray-50 rounded-md -ml-36 shadow-xl"
+						class="w-96 h-[36rem] object-cover border-8 border-gray-50 rounded-md -ml-36 shadow-xl hover:z-50 transition-all ease-linear cursor-pointer hover:-translate-y-2 hover:border-blue-500"
 					/>
 				</div>
 			</section>
@@ -247,8 +253,12 @@
 				<h2 class="text-3xl font-bold text-gray-700 mb-4">Our Latest <span class="text-blue-500">News</span></h2>
 
 				<div class="max-w-6xl mx-auto grid grid-cols-2 gap-8">
-					<div class="relative w-[26rem] h-64 rounded">
-						<img src="/img/news1.jpg" alt="" class="object-cover w-full h-full" />
+					<div class="relative w-[26rem] h-64 rounded overflow-hidden cursor-pointer group">
+						<img
+							src="/img/news1.jpg"
+							alt=""
+							class="object-cover w-full h-full transition-all group-hover:scale-125 ease-linear"
+						/>
 						<div class="absolute bottom-0 left-0 w-full bg-black/60 text-white p-4">
 							<h4 class="text-xl font-semibold mb-3">Best Ways to Enjoy vacation with family</h4>
 
@@ -270,8 +280,12 @@
 						</div>
 					</div>
 
-					<div class="relative w-[26rem] h-64 rounded">
-						<img src="/img/news2.jpg" alt="" class="object-cover w-full h-full" />
+					<div class="relative w-[26rem] h-64 rounded overflow-hidden cursor-pointer group">
+						<img
+							src="/img/news2.jpg"
+							alt=""
+							class="object-cover w-full h-full transition-all group-hover:scale-125 ease-linear"
+						/>
 						<div class="absolute bottom-0 left-0 w-full bg-black/60 text-white p-4">
 							<h4 class="text-xl font-semibold mb-3">7 fun things to do on vacations</h4>
 
@@ -293,8 +307,12 @@
 						</div>
 					</div>
 
-					<div class="relative w-[26rem] h-64 rounded">
-						<img src="/img/news3.jpg" alt="" class="object-cover w-full h-full" />
+					<div class="relative w-[26rem] h-64 rounded overflow-hidden cursor-pointer group">
+						<img
+							src="/img/news3.jpg"
+							alt=""
+							class="object-cover w-full h-full transition-all group-hover:scale-125 ease-linear"
+						/>
 						<div class="absolute bottom-0 left-0 w-full bg-black/60 text-white p-4">
 							<h4 class="text-xl font-semibold mb-3">Top places to stay in Asia</h4>
 
@@ -315,8 +333,12 @@
 							</a>
 						</div>
 					</div>
-					<div class="relative w-[26rem] h-64 rounded">
-						<img src="/img/news4.jpg" alt="" class="object-cover w-full h-full" />
+					<div class="relative w-[26rem] h-64 rounded overflow-hidden cursor-pointer group">
+						<img
+							src="/img/news4.jpg"
+							alt=""
+							class="object-cover w-full h-full transition-all group-hover:scale-125 ease-linear"
+						/>
 						<div class="absolute bottom-0 left-0 w-full bg-black/60 text-white p-4">
 							<h4 class="text-xl font-semibold mb-3">What to do with large mansions</h4>
 
